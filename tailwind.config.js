@@ -1,4 +1,6 @@
 // tailwind.config.js
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
     purge: [
       // Use *.tsx if using TypeScript
@@ -7,6 +9,10 @@ module.exports = {
     ],
     // ...
     theme: {
+      screens :{
+        'xs':'500px',
+        ...defaultTheme.screens,
+      },
       extend: {
         colors: {
           'accent-1': '#FAFAFA',
