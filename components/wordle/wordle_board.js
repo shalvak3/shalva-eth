@@ -1,6 +1,6 @@
 export default function WordleBoard({ children }) {
     return(
-        <div className="w-full h-full bg-indigo-500">
+        <div className="w-full h-full bg-white">
             <style global jsx>{`
                 body, html {
                     height:100%;
@@ -10,7 +10,8 @@ export default function WordleBoard({ children }) {
                     height:100%;                    
                 }
            `}</style>
-            <div className="flex flex-col my-0 mx-auto w-full h-full max-w-xs font-sans text-lg p-0">
+            <div className="flex flex-col my-0 mx-auto w-full h-full 
+                            max-w-screen-wordle font-sans text-lg p-0 items-center">
                 {children}
              </div>
         </div>
