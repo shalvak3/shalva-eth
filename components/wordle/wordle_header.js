@@ -1,6 +1,11 @@
 import Container from "../container"
 
 export default function WordleHeader(){
+
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark')
+    }
+
     return (
         <Container>
             <div className='flex flex-row space-x-1 justify-between'> 
@@ -8,7 +13,7 @@ export default function WordleHeader(){
                 <div>WORDLE</div>
                 <div className='space-x-1'>
                     <button>Stats</button>
-                    <button>Toggle</button>
+                    <button onClick={toggleTheme}>Toggle</button>
                 </div>
             </div>
         </Container>
